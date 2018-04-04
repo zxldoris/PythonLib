@@ -26,5 +26,5 @@ frame = Frame(root, width=200, height=200)
 frame.bind("<Key>", key)
 frame.bind("<Button-1>", callback)
 frame.pack()
-t = Text(frame)
+t = Text(frame)  # 此处可以设置为Entry小部件，注意在key函数中，.insert(index,opt),index参数改变
 root.mainloop()
